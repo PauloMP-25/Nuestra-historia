@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Línea del Tiempo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align:center; margin-bottom:40px;">NUESTA HISTORIA DE AMOR</h1>
+        <div id="countdown" style="text-align:center; font-size:18px; color:#e84118; font-weight:bold; font-style: italic;"></div>
+    </header>
+
+    <main class="timeline-container">
+        <div class="timeline">
+
+            <!-- Evento 1 -->
+            <div class="timeline-item right">
+                <div class="timeline-icon" onclick="openModal(1)">😍</div>
+                <div class="timeline-content">
+                    <h3>ENERO - MAYO 2025</h3>
+                    <p>Desde que comenzo el año no dejo de enamorarme de ti.</p>
+                </div>
+            </div>
+
+            <!-- Evento 2 -->
+            <div class="timeline-item left">
+                <div class="timeline-icon" onclick="openModal(2)">😊</div>
+                <div class="timeline-content">
+                    <h3>JULIO 2025</h3>
+                    <p>EL DIA EN QUE MI AMOR POR TI LLEGUE HASTA EL FINAL DEL UNIVERSO</p>
+                </div>
+            </div>
+
+            <!-- Evento 3 -->
+            <div class="timeline-item right">
+                <div class="timeline-icon" onclick="openModal(3)">❤️</div>
+                <div class="timeline-content">
+                    <h3>21 Septiembre 2025</h3>
+                    <p>NUNCA ESPECTADORA, SIEMPRE PROTAGONISTA</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="javascript/timeline.js"></script>
+    <script src="javascript/modal.js"></script>
+    <script src="javascript/contador.js"></script>
+</body>
+
+</html>
